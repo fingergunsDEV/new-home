@@ -1,153 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data-Driven Dashboards | Holistic Growth Marketing</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Insights with Powerful BI Dashboards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "gsap": "https://cdn.jsdelivr.net/npm/gsap@3.12.2/index.js",
+                "gsap/ScrollTrigger": "https://cdn.jsdelivr.net/npm/gsap@3.12.2/ScrollTrigger.js"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-flex">
-      <img src="https://assets.onecompiler.app/42kgg76bk/437s7upun/Logo%20Symbol.png" style="width:50px;"/><div class="logo">Holistic Growth <span>Marketing</span></div>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="auth-actions">
-        <a href="#login" class="btn outline">Login</a>
-        <a href="#signup" class="btn primary">Start Free Trial</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Smarter Decisions Start with Better Dashboards</h1>
-        <p>Gain real-time visibility into your business with dashboards designed for clarity, speed, and confident decision-making.</p>
-        <form class="signup-form">
-          <input type="email" placeholder="Enter your business email" required />
-          <button type="submit" class="btn primary large">Start Free Trial</button>
-        </form>
-        <p class="small-note">Free trial. No credit card required.</p>
-      </div>
-      <div class="hero-image">
-        <img src="dashboard-preview.png" alt="Dashboard Screenshot" />
-      </div>
-    </div>
-  </section>
-
-  <section class="features" id="features">
-    <div class="container">
-      <h2>Built for Business Impact</h2>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3><i class="fas fa-bullseye"></i> Precision Marketing</h3>
-          <p>Track ROI, customer journeys, and channel performance to optimize your spend.</p>
-          <ul>
-            <li>Real-time ROI tracking</li>
-            <li>Audience segmentation</li>
-            <li>Trend forecasting</li>
-            <li>Campaign analytics</li>
-          </ul>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="site-logo">BI<span>Dash</span></div>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#" class="nav-link">Features</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="#" class="nav-link">Resources</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+            </div>
         </div>
-        <div class="feature">
-          <h3><i class="fas fa-coins"></i> Operational Intelligence</h3>
-          <p>Monitor KPIs and surface inefficiencies to reduce costs and drive growth.</p>
-          <ul>
-            <li>Live cost modeling</li>
-            <li>KPI dashboards</li>
-            <li>Revenue forecasting</li>
-            <li>Workflow transparency</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="process" id="process">
-    <div class="container">
-      <h2>Our 4-Step Process</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-icon"><i class="fas fa-calendar-plus"></i></div>
-          <h4>Discovery Call</h4>
-          <p>Identify your business goals and current data needs.</p>
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Unlock Insights with Powerful BI Dashboards</h1>
+                <p>Transform your data into actionable intelligence. Get a clear view of your business performance with our intuitive, modern dashboards.</p>
+                <form class="hero-signup-form">
+                    <input type="email" placeholder="Enter your business email">
+                    <button type="submit" class="btn btn-primary btn-large">Get Started Free</button>
+                </form>
+                <p class="hero-small-text">No credit card required. Start your free trial today.</p>
+            </div>
+            <div class="hero-image">
+                <img src="placeholder-dashboard.png" alt="Business Intelligence Dashboard Screenshot">
+            </div>
         </div>
-        <div class="step">
-          <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
-          <h4>Define Metrics</h4>
-          <p>Align on KPIs that matter most for your decision-makers.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon"><i class="fas fa-laptop-code"></i></div>
-          <h4>Custom Setup</h4>
-          <p>Connect your data and launch tailored dashboards.</p>
-        </div>
-        <div class="step">
-          <div class="step-icon"><i class="fas fa-headset"></i></div>
-          <h4>Strategic Support</h4>
-          <p>Ongoing optimization and expert check-ins.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <h2>What Clients Are Saying</h2>
-      <div class="testimonial-grid">
-        <blockquote>
-          <p>“We no longer guess — we know. The dashboard gave us instant access to sales trends.”</p>
-          <cite>Jane Doe – VP of Sales, Clarity Brands</cite>
-        </blockquote>
-        <blockquote>
-          <p>“We saved 20% in operational costs in one quarter just from insights gained.”</p>
-          <cite>John Smith – Director of Ops, Horizon Metrics</cite>
-        </blockquote>
-        <blockquote>
-          <p>“It’s like having a control panel for our entire business. We forecast smarter and react faster.”</p>
-          <cite>Sarah Lee – COO, Axis Ventures</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"BI<span>Dash</span> transformed our sales reporting. We now have real-time insights that help us make faster, better decisions."</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jane Doe</h4>
+                            <span>Head of Sales, Innovate Corp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Implementing these dashboards significantly improved our understanding of customer behavior and marketing campaign effectiveness."</p>
+                    <div class="testimonial-author">
+                         <div class="author-info">
+                            <h4>John Smith</h4>
+                            <span>Marketing Director, Global Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="testimonial-card">
+                    <p>"The ability to visualize our operational data has streamlined processes and directly contributed to cost savings and increased ROI."</p>
+                    <div class="testimonial-author">
+                         <div class="author-info">
+                            <h4>Sarah Lee</h4>
+                            <span>Operations Manager, Future Enterprises</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer class="site-footer" id="contact">
-    <div class="container footer-grid">
-      <div>
-        <h3>Holistic Growth Marketing</h3>
-        <p>Data-driven dashboards designed for clarity, control, and confident decisions.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container copyright">
-      <p>&copy; 2025 Holistic Growth Marketing. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="benefits-container">
+            <h2>Boost Your Business with Analytics</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3><i class="fas fa-chart-line"></i> Improve Marketing Efforts</h3>
+                    <p>Understand customer journeys, analyze campaign performance, and optimize your spending with detailed marketing analytics. Identify key trends and segment your audience for more effective targeting.</p>
+                    <ul>
+                        <li>Track campaign ROI</li>
+                        <li>Analyze customer demographics</li>
+                        <li>Optimize ad spend</li>
+                        <li>Identify effective channels</li>
+                    </ul>
+                </div>
+                <div class="benefit-item">
+                    <h3><i class="fas fa-dollar-sign"></i> Drive ROI & Operational Efficiency</h3>
+                    <p>Gain visibility into your operational costs and revenue streams. Pinpoint inefficiencies, forecast performance, and allocate resources effectively to maximize profitability and achieve higher ROI.</p>
+                     <ul>
+                        <li>Monitor key performance indicators (KPIs)</li>
+                        <li>Identify cost reduction opportunities</li>
+                        <li>Forecast revenue and expenses</li>
+                        <li>Streamline workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="process-container">
+            <h2>Our Simple Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-phone-alt"></i> Book a Call</h3>
+                        <p>Get started with a free consultation to discuss your business needs and challenges. We'll explore how BI can help.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-lightbulb"></i> Discover Strategy</h3>
+                        <p>We'll work with you to identify key metrics and design a custom dashboard strategy tailored to your specific goals.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-tools"></i> Train & Implement</h3>
+                        <p>Our team will set up your dashboards and provide comprehensive training to ensure you can leverage the tools effectively.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3><i class="fas fa-calendar-check"></i> Support & Check-ins</h3>
+                        <p>Receive monthly check-ins and 24/7 premium support to keep your insights sharp and your operations smooth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <div class="logo-text">Company<span>Name</span></div>
+                    <div class="logo-tagline">Modern Design Solutions</div>
+                </div>
+                <p>Creating exceptional digital experiences with innovative technology and thoughtful design.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                         <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Pinterest">
+                         <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Services</a></li>
+                    <li><a href="#" class="footer-link">Projects</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Web Design</a></li>
+                    <li><a href="#" class="footer-link">Development</a></li>
+                    <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                    <li><a href="#" class="footer-link">Digital Marketing</a></li>
+                    <li><a href="#" class="footer-link">Brand Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span>123 Design Street, Creative City, 10001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span>hello@companyname.com</span>
+                    </li>
+                </ul>
+                <div class="footer-map">
+                    <img src="/Screenshot_20250506-220352_landscape.png" alt="Map of Southern California Coastal Region">
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn-subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2023 CompanyName. All rights reserved.
+            </div>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
 </body>
 </html>
