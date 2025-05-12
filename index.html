@@ -8,32 +8,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Intelligence & SEO Analytics Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
   <nav banners="true" class="navbar">
     <div class="logo"><img src="https://cdn.prod.website-files.com/65db95957d65c02ae759f762/6712e73f4d5a992f5e05c08b_HGM%20-%20Webclip.avif" style="width:100px;"></img>Holistic Growth Marketing</div>
     <button class="hamburger" aria-label="Toggle navigation">☰</button>
     <div class="nav-links">
-      <a href="https://www.holisticgrowthmarketing.com/">Home</a>
-      <a href="https://www.holisticgrowthmarketing.com/about-us">About Us</a>
+      <a href="#home">Home</a>
+      <a href="#about-us">About Us</a>
       <div class="dropdown">
-        <a href="https://www.holisticgrowthmarketing.com/services" class="dropdown-toggle">Services</a>
+        <a href="#solutions" class="dropdown-toggle">Services</a>
         <div class="dropdown-menu">
-          <a href="https://www.holisticgrowthmarketing.com/services/business-intelligence">Business Intelligence</a>
-          <a href="https://www.holisticgrowthmarketing.com/services/search-engine-optimization">SEO</a>
-          <a href="https://www.holisticgrowthmarketing.com/services/content-marketing">Content Marketing</a>
-          <a href="https://www.holisticgrowthmarketing.com/services/web-development-services">Web Development</a>
+          <a href="#business-intelligence">Business Intelligence</a>
+          <a href="#seo">SEO</a>
+          <a href="#content-marketing">Content Marketing</a>
+          <a href="#web-development">Web Development</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="https://www.holisticgrowthmarketing.com/locations" class="dropdown-toggle">Locations</a>
+        <a href="#locations" class="dropdown-toggle">Locations</a>
         <div class="dropdown-menu">
-          <a href="https://www.holisticgrowthmarketing.com/los-angeles-seo">Los Angeles</a>
-          <a href="https://www.holisticgrowthmarketing.com/new-york-city-seo">New York City</a>
-          <a href="https://www.holisticgrowthmarketing.com/chicago-seo">Chicago</a>
-          <a href="https://www.holisticgrowthmarketing.com/atlanta-seo">Atlanta</a>
+          <a href="#los-angeles">Los Angeles</a>
+          <a href="#new-york">New York City</a>
+          <a href="#chicago">Chicago</a>
+          <a href="#atlanta">Atlanta</a>
+          <a href="#san-francisco">San Francisco</a>
+          <a href="#miami">Miami</a>
+          <a href="#houston">Houston</a>
+          <a href="#boston">Boston</a>
         </div>
       </div>
-      <a href="https://www.holisticgrowthmarketing.com/resources">Resources</a>
-      <a href="https://www.holisticgrowthmarketing.com/contact">Contact</a>
+      <div class="dropdown">
+        <a href="#industries" class="dropdown-toggle">Industries</a>
+        <div class="dropdown-menu">
+          <a href="#ecommerce">E-commerce</a>
+          <a href="#healthcare">Healthcare</a>
+          <a href="#technology">Technology</a>
+          <a href="#real-estate">Real Estate</a>
+          <a href="#hospitality">Hospitality</a>
+        </div>
+      </div>
+      <a href="#resources">Resources</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#contact">Contact</a>
     </div>
     <div class="nav-actions">
       <button class="btn btn-outline">Sign In</button>
@@ -41,6 +66,110 @@
     </div>
   </nav>
 
+  <!-- Existing sections (hero, features, solutions, resources, testimonials, demo-section, footer) remain unchanged -->
+  <!-- Insert new placeholder sections for new menu items -->
+
+  <section id="locations" class="locations">
+    <h2>Our Locations</h2>
+    <p class="section-subtitle">Delivering tailored SEO and analytics solutions across major U.S. cities</p>
+    <div class="locations-grid">
+      <div class="location-card" id="los-angeles">
+        <h3>Los Angeles</h3>
+        <p>Boost your online presence in the heart of California with our SEO expertise.</p>
+        <a href="#contact" class="btn btn-outline">Contact LA Team</a>
+      </div>
+      <div class="location-card" id="new-york">
+        <h3>New York City</h3>
+        <p>Dominate search rankings in the Big Apple with our advanced analytics.</p>
+        <a href="#contact" class="btn btn-outline">Contact NYC Team</a>
+      </div>
+      <div class="location-card" id="chicago">
+        <h3>Chicago</h3>
+        <p>Drive business growth in the Windy City with our BI and SEO tools.</p>
+        <a href="#contact" class="btn btn-outline">Contact Chicago Team</a>
+      </div>
+      <div class="location-card" id="atlanta">
+        <h3>Atlanta</h3>
+        <p>Accelerate your digital strategy in the South with our tailored solutions.</p>
+        <a href="#contact" class="btn btn-outline">Contact Atlanta Team</a>
+      </div>
+      <div class="location-card" id="san-francisco">
+        <h3>San Francisco</h3>
+        <p>Leverage cutting-edge analytics in the tech hub of the West Coast.</p>
+        <a href="#contact" class="btn btn-outline">Contact SF Team</a>
+      </div>
+      <div class="location-card" id="miami">
+        <h3>Miami</h3>
+        <p>Enhance your visibility in the Sunshine State with our SEO strategies.</p>
+        <a href="#contact" class="btn btn-outline">Contact Miami Team</a>
+      </div>
+      <div class="location-card" id="houston">
+        <h3>Houston</h3>
+        <p>Scale your business in Texas with our data-driven marketing solutions.</p>
+        <a href="#contact" class="btn btn-outline">Contact Houston Team</a>
+      </div>
+      <div class="location-card" id="boston">
+        <h3>Boston</h3>
+        <p>Optimize your digital presence in New England with our expert services.</p>
+        <a href="#contact" class="btn btn-outline">Contact Boston Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries" class="industries">
+    <h2>Industries We Serve</h2>
+    <p class="section-subtitle">Customized solutions for diverse business sectors</p>
+    <div class="industries-grid">
+      <div class="industry-card" id="ecommerce">
+        <h3>E-commerce</h3>
+        <p>Drive online sales with targeted SEO and analytics for e-commerce platforms.</p>
+        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
+      </div>
+      <div class="industry-card" id="healthcare">
+        <h3>Healthcare</h3>
+        <p>Enhance patient engagement with data-driven marketing strategies.</p>
+        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
+      </div>
+      <div class="industry-card" id="technology">
+        <h3>Technology</h3>
+        <p>Accelerate growth for tech companies with advanced BI tools.</p>
+        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
+      </div>
+      <div class="industry-card" id="real-estate">
+        <h3>Real Estate</h3>
+        <p>Boost property listings with localized SEO and analytics.</p>
+        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
+      </div>
+      <div class="industry-card" id="hospitality">
+        <h3>Hospitality</h3>
+        <p>Increase bookings with tailored digital marketing solutions.</p>
+        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="case-studies" class="case-studies">
+    <h2>Case Studies</h2>
+    <p class="section-subtitle">Discover how we've helped businesses succeed across locations and industries</p>
+    <div class="case-studies-grid">
+      <div class="case-study-card">
+        <h3>E-commerce Success in Los Angeles</h3>
+        <p>Achieved 300% traffic growth for an LA-based online retailer using our SEO tools.</p>
+        <a href="#contact" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="case-study-card">
+        <h3>Healthcare Growth in New York</h3>
+        <p>Improved patient acquisition by 150% for a NYC healthcare provider.</p>
+        <a href="#contact" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="case-study-card">
+        <h3>Tech Startup in San Francisco</h3>
+        <p>Boosted lead generation by 200% for a SF tech startup with BI insights.</p>
+        <a href="#contact" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+  </section>
+  
   <header class="hero">
     <div class="hero-content">
       <h1>Transform Your Business with Intelligent Analytics</h1>
@@ -567,14 +696,14 @@
         <h4>Contact</h4>
         <a href="https://www.holisticgrowthmarketing.com/contact">Support</a>
         <a href="https://www.holisticgrowthmarketing.com/contact">Sales</a>
-        <a href="mailto:help@datasightpro.com">help@datasightpro.com</a>
+        <a href="mailto:jason@holisticgrowthmarketing.com">jason@holisticgrowthmarketing.com</a>
         <a href="tel:(323)902-1031">(323)902-1031</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p class="copyright">© 2025 Holistic Growth Marketing. All rights reserved.</p>
       <div class="footer-links">
-        <a href="https://www.holisticgrowthmarketing.com/">Sitemap</a>
+        <a href="https://www.holisticgrowthmarketing.com/sitemap.xml">Sitemap</a>
         <a href="#">Accessibility</a>
         <a href="https://www.holisticgrowthmarketing.com/term/privacy-policy">Do Not Sell My Info</a>
       </div>
