@@ -1,703 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Intelligence & SEO Analytics Platform</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data-Driven Dashboards | Holistic Growth Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <nav banners="true" class="navbar">
-    <div class="logo"><img src="https://cdn.prod.website-files.com/65db95957d65c02ae759f762/6712e73f4d5a992f5e05c08b_HGM%20-%20Webclip.avif" style="width:100px;"></img>Holistic Growth Marketing</div>
-    <button class="hamburger" aria-label="Toggle navigation">☰</button>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about-us">About Us</a>
-      <div class="dropdown">
-        <a href="#solutions" class="dropdown-toggle">Services</a>
-        <div class="dropdown-menu">
-          <a href="#business-intelligence">Business Intelligence</a>
-          <a href="#seo">SEO</a>
-          <a href="#content-marketing">Content Marketing</a>
-          <a href="#web-development">Web Development</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#locations" class="dropdown-toggle">Locations</a>
-        <div class="dropdown-menu">
-          <a href="#los-angeles">Los Angeles</a>
-          <a href="#new-york">New York City</a>
-          <a href="#chicago">Chicago</a>
-          <a href="#atlanta">Atlanta</a>
-          <a href="#san-francisco">San Francisco</a>
-          <a href="#miami">Miami</a>
-          <a href="#houston">Houston</a>
-          <a href="#boston">Boston</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="#industries" class="dropdown-toggle">Industries</a>
-        <div class="dropdown-menu">
-          <a href="#ecommerce">E-commerce</a>
-          <a href="#healthcare">Healthcare</a>
-          <a href="#technology">Technology</a>
-          <a href="#real-estate">Real Estate</a>
-          <a href="#hospitality">Hospitality</a>
-        </div>
-      </div>
-      <a href="#resources">Resources</a>
-      <a href="#case-studies">Case Studies</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="nav-actions">
-      <button class="btn btn-outline">Sign In</button>
-      <button class="btn btn-primary">Get Started</button>
-    </div>
-  </nav>
 
-  <section id="locations" class="locations">
-    <h2>Our Locations</h2>
-    <p class="section-subtitle">Delivering tailored SEO and analytics solutions across major U.S. cities</p>
-    <div class="locations-grid">
-      <div class="location-card" id="los-angeles">
-        <h3>Los Angeles</h3>
-        <p>Boost your online presence in the heart of California with our SEO expertise.</p>
-        <a href="#contact" class="btn btn-outline">Contact LA Team</a>
+  <header class="site-header">
+    <div class="container header-flex">
+      <img src="https://assets.onecompiler.app/42kgg76bk/437s7upun/Logo%20Symbol.png" style="width:50px;"/><div class="logo">Holistic Growth <span>Marketing</span></div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="auth-actions">
+        <a href="#login" class="btn outline">Login</a>
+        <a href="#signup" class="btn primary">Start Free Trial</a>
       </div>
-      <div class="location-card" id="new-york">
-        <h3>New York City</h3>
-        <p>Dominate search rankings in the Big Apple with our advanced analytics.</p>
-        <a href="#contact" class="btn btn-outline">Contact NYC Team</a>
-      </div>
-      <div class="location-card" id="chicago">
-        <h3>Chicago</h3>
-        <p>Drive business growth in the Windy City with our BI and SEO tools.</p>
-        <a href="#contact" class="btn btn-outline">Contact Chicago Team</a>
-      </div>
-      <div class="location-card" id="atlanta">
-        <h3>Atlanta</h3>
-        <p>Accelerate your digital strategy in the South with our tailored solutions.</p>
-        <a href="#contact" class="btn btn-outline">Contact Atlanta Team</a>
-      </div>
-      <div class="location-card" id="san-francisco">
-        <h3>San Francisco</h3>
-        <p>Leverage cutting-edge analytics in the tech hub of the West Coast.</p>
-        <a href="#contact" class="btn btn-outline">Contact SF Team</a>
-      </div>
-      <div class="location-card" id="miami">
-        <h3>Miami</h3>
-        <p>Enhance your visibility in the Sunshine State with our SEO strategies.</p>
-        <a href="#contact" class="btn btn-outline">Contact Miami Team</a>
-      </div>
-      <div class="location-card" id="houston">
-        <h3>Houston</h3>
-        <p>Scale your business in Texas with our data-driven marketing solutions.</p>
-        <a href="#contact" class="btn btn-outline">Contact Houston Team</a>
-      </div>
-      <div class="location-card" id="boston">
-        <h3>Boston</h3>
-        <p>Optimize your digital presence in New England with our expert services.</p>
-        <a href="#contact" class="btn btn-outline">Contact Boston Team</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="industries" class="industries">
-    <h2>Industries We Serve</h2>
-    <p class="section-subtitle">Customized solutions for diverse business sectors</p>
-    <div class="industries-grid">
-      <div class="industry-card" id="ecommerce">
-        <h3>E-commerce</h3>
-        <p>Drive online sales with targeted SEO and analytics for e-commerce platforms.</p>
-        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
-      </div>
-      <div class="industry-card" id="healthcare">
-        <h3>Healthcare</h3>
-        <p>Enhance patient engagement with data-driven marketing strategies.</p>
-        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
-      </div>
-      <div class="industry-card" id="technology">
-        <h3>Technology</h3>
-        <p>Accelerate growth for tech companies with advanced BI tools.</p>
-        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
-      </div>
-      <div class="industry-card" id="real-estate">
-        <h3>Real Estate</h3>
-        <p>Boost property listings with localized SEO and analytics.</p>
-        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
-      </div>
-      <div class="industry-card" id="hospitality">
-        <h3>Hospitality</h3>
-        <p>Increase bookings with tailored digital marketing solutions.</p>
-        <a href="#case-studies" class="btn btn-outline">View Case Studies</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="case-studies" class="case-studies">
-    <h2>Case Studies</h2>
-    <p class="section-subtitle">Discover how we've helped businesses succeed across locations and industries</p>
-    <div class="case-studies-grid">
-      <div class="case-study-card">
-        <h3>E-commerce Success in Los Angeles</h3>
-        <p>Achieved 300% traffic growth for an LA-based online retailer using our SEO tools.</p>
-        <a href="#contact" class="btn btn-outline">Learn More</a>
-      </div>
-      <div class="case-study-card">
-        <h3>Healthcare Growth in New York</h3>
-        <p>Improved patient acquisition by 150% for a NYC healthcare provider.</p>
-        <a href="#contact" class="btn btn-outline">Learn More</a>
-      </div>
-      <div class="case-study-card">
-        <h3>Tech Startup in San Francisco</h3>
-        <p>Boosted lead generation by 200% for a SF tech startup with BI insights.</p>
-        <a href="#contact" class="btn btn-outline">Learn More</a>
-      </div>
-    </div>
-  </section>
-  
-  <header class="hero" style="margin:0 auto;">
-    <div class="hero-content">
-      <h1>Transform Your Business with Intelligent Analytics</h1>
-      <p class="hero-subtitle">Powerful BI dashboards and SEO analytics unified in one platform</p>
-      <div class="hero-cta">
-        <button class="btn btn-primary btn-large">Start Free Trial</button>
-        <button class="btn btn-outline btn-large">Watch Demo</button>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">98%</span>
-          <span class="stat-label">Customer Satisfaction</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">50K+</span>
-          <span class="stat-label">Active Users</span>
-        </div>
-        <div class="stat">
-          <span class="stat-number">200%</span>
-          <span class="stat-label">Average ROI</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="img/dashboard-preview.png" alt="Dashboard Preview">
     </div>
   </header>
 
-  <section id="features" class="features">
-    <h2>Everything You Need in One Platform</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
-          </svg>
-        </div>
-        <h3>Real-time Analytics</h3>
-        <p>Monitor your business metrics in real-time with customizable dashboards</p>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Smarter Decisions Start with Better Dashboards</h1>
+        <p>Gain real-time visibility into your business with dashboards designed for clarity, speed, and confident decision-making.</p>
+        <form class="signup-form">
+          <input type="email" placeholder="Enter your business email" required />
+          <button type="submit" class="btn primary large">Start Free Trial</button>
+        </form>
+        <p class="small-note">Free trial. No credit card required.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-          </svg>
-        </div>
-        <h3>SEO Intelligence</h3>
-        <p>Advanced SEO metrics and recommendations powered by AI</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/>
-          </svg>
-        </div>
-        <h3>Predictive Insights</h3>
-        <p>Forecast trends and make data-driven decisions with confidence</p>
+      <div class="hero-image">
+        <img src="dashboard-preview.png" alt="Dashboard Screenshot" />
       </div>
     </div>
   </section>
 
-  <section id="solutions" class="solutions">
-    <h2>Solutions for Every Business</h2>
-    <p class="section-subtitle">Tailored analytics packages to meet your specific needs</p>
-    
-    <div class="solutions-grid">
-      <div class="solution-card">
-        <div class="solution-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
-          </svg>
-        </div>
-        <h3>Startup Growth Package</h3>
-        <div class="price">
-          <span class="amount">$299</span>
-          <span class="period">/month</span>
-        </div>
-        <ul class="features-list">
-          <li>Real-time Analytics Dashboard</li>
-          <li>Basic SEO Tools</li>
-          <li>5 User Accounts</li>
-          <li>Weekly Reports</li>
-          <li>Email Support</li>
-        </ul>
-        <div class="solution-tags">
-          <span>Perfect for Startups</span>
-          <span>Essential Features</span>
-        </div>
-        <button class="btn btn-outline">Get Started</button>
-      </div>
-
-      <div class="solution-card featured">
-        <div class="featured-badge">Most Popular</div>
-        <div class="solution-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
-          </svg>
-        </div>
-        <h3>Business Pro Suite</h3>
-        <div class="price">
-          <span class="amount">$799</span>
-          <span class="period">/month</span>
-        </div>
-        <ul class="features-list">
-          <li>Advanced Analytics Platform</li>
-          <li>Complete SEO Toolkit</li>
-          <li>20 User Accounts</li>
-          <li>Custom Reports</li>
-          <li>24/7 Priority Support</li>
-          <li>API Access</li>
-          <li>AI-Powered Insights</li>
-        </ul>
-        <div class="solution-tags">
-          <span>Best Value</span>
-          <span>Full Features</span>
-        </div>
-        <button class="btn btn-primary">Get Started</button>
-      </div>
-
-      <div class="solution-card">
-        <div class="solution-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
-          </svg>
-        </div>
-        <h3>Enterprise Solution</h3>
-        <div class="price">
-          <span class="amount">Custom</span>
-          <span class="period">pricing</span>
-        </div>
-        <ul class="features-list">
-          <li>Unlimited Analytics</li>
-          <li>Enterprise SEO Suite</li>
-          <li>Unlimited Users</li>
-          <li>Custom Integration</li>
-          <li>Dedicated Support Team</li>
-          <li>On-premise Deployment</li>
-          <li>Custom Development</li>
-        </ul>
-        <div class="solution-tags">
-          <span>Enterprise-Grade</span>
-          <span>Custom Solutions</span>
-        </div>
-        <button class="btn btn-outline">Contact Sales</button>
-      </div>
-    </div>
-
-    <div class="solution-features">
-      <h3>Why Choose Our Solutions?</h3>
-      <div class="features-container">
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Built for Business Impact</h2>
+      <div class="feature-grid">
         <div class="feature">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/>
-            </svg>
-          </div>
-          <h4>AI-Powered SEO Analysis</h4>
-          <p>Advanced machine learning algorithms provide real-time SEO recommendations and competitive analysis</p>
+          <h3><i class="fas fa-bullseye"></i> Precision Marketing</h3>
+          <p>Track ROI, customer journeys, and channel performance to optimize your spend.</p>
+          <ul>
+            <li>Real-time ROI tracking</li>
+            <li>Audience segmentation</li>
+            <li>Trend forecasting</li>
+            <li>Campaign analytics</li>
+          </ul>
         </div>
         <div class="feature">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"/>
-            </svg>
-          </div>
-          <h4>Predictive Analytics</h4>
-          <p>Forecast market trends and customer behavior with 95% accuracy using our advanced BI tools</p>
-        </div>
-        <div class="feature">
-          <div class="feature-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
-            </svg>
-          </div>
-          <h4>Real-time Monitoring</h4>
-          <p>Track your SEO performance and business metrics in real-time with customizable dashboards</p>
-        </div>
-      </div>
-
-      <div class="why-choose-details">
-        <div class="detail-columns">
-          <div class="detail-column">
-            <h4>SEO Excellence</h4>
-            <ul class="benefits-list">
-              <li>
-                <span class="benefit-title">Keyword Intelligence</span>
-                <span class="benefit-desc">AI-powered keyword research and optimization suggestions</span>
-              </li>
-              <li>
-                <span class="benefit-title">Technical SEO Audit</span>
-                <span class="benefit-desc">Automated site analysis and optimization recommendations</span>
-              </li>
-              <li>
-                <span class="benefit-title">Content Optimization</span>
-                <span class="benefit-desc">ML-driven content suggestions and readability analysis</span>
-              </li>
-              <li>
-                <span class="benefit-title">Competitor Analysis</span>
-                <span class="benefit-desc">Detailed competitive landscape and gap analysis</span>
-              </li>
-            </ul>
-          </div>
-          <div class="detail-column">
-            <h4>Business Intelligence</h4>
-            <ul class="benefits-list">
-              <li>
-                <span class="benefit-title">Advanced Analytics</span>
-                <span class="benefit-desc">Deep insights into customer behavior and market trends</span>
-              </li>
-              <li>
-                <span class="benefit-title">Predictive Modeling</span>
-                <span class="benefit-desc">Future trend forecasting with machine learning</span>
-              </li>
-              <li>
-                <span class="benefit-title">Custom Dashboards</span>
-                <span class="benefit-desc">Fully customizable KPI tracking and visualization</span>
-              </li>
-              <li>
-                <span class="benefit-title">Data Integration</span>
-                <span class="benefit-desc">Seamless integration with existing business tools</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="success-metrics">
-          <h4>Our Impact</h4>
-          <div class="metrics-grid">
-            <div class="metric-card">
-              <span class="metric-number">250%</span>
-              <span class="metric-label">Average SEO Traffic Increase</span>
-            </div>
-            <div class="metric-card">
-              <span class="metric-number">85%</span>
-              <span class="metric-label">Forecast Accuracy</span>
-            </div>
-            <div class="metric-card">
-              <span class="metric-number">3x</span>
-              <span class="metric-label">ROI Improvement</span>
-            </div>
-            <div class="metric-card">
-              <span class="metric-number">60min</span>
-              <span class="metric-label">Daily Time Saved</span>
-            </div>
-          </div>
+          <h3><i class="fas fa-coins"></i> Operational Intelligence</h3>
+          <p>Monitor KPIs and surface inefficiencies to reduce costs and drive growth.</p>
+          <ul>
+            <li>Live cost modeling</li>
+            <li>KPI dashboards</li>
+            <li>Revenue forecasting</li>
+            <li>Workflow transparency</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="resources" class="resources">
-    <h2>Explore Our Resources</h2>
-    <p class="section-subtitle">Dive into our articles and tools for SEO and business growth</p>
-    <div class="resources-grid">
-      <div class="resource-card">
-        <h3>SEO in 2024: A Beginner's Guide</h3>
-        <p>Learn the fundamentals of SEO with our comprehensive guide.</p>
-        <a href="https://www.holisticgrowthmarketing.com/article/seo-in-2024-a-beginners-guide" class="btn btn-outline">Read Article</a>
-      </div>
-      <div class="resource-card">
-        <h3>Keyword Research for SEO</h3>
-        <p>Master keyword research with our expert tips and strategies.</p>
-        <a href="https://www.holisticgrowthmarketing.com/article/keyword-research-for-seo" class="btn btn-outline">Read Article</a>
-      </div>
-      <div class="resource-card">
-        <h3>SEO Tools Suite</h3>
-        <p>Explore our suite of tools for advanced SEO analytics.</p>
-        <a href="https://www.holisticgrowthmarketing.com/seo-tools-suite" class="btn btn-outline">View Tools</a>
+  <section class="process" id="process">
+    <div class="container">
+      <h2>Our 4-Step Process</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon"><i class="fas fa-calendar-plus"></i></div>
+          <h4>Discovery Call</h4>
+          <p>Identify your business goals and current data needs.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="fas fa-chart-bar"></i></div>
+          <h4>Define Metrics</h4>
+          <p>Align on KPIs that matter most for your decision-makers.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="fas fa-laptop-code"></i></div>
+          <h4>Custom Setup</h4>
+          <p>Connect your data and launch tailored dashboards.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="fas fa-headset"></i></div>
+          <h4>Strategic Support</h4>
+          <p>Ongoing optimization and expert check-ins.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="testimonials" class="testimonials">
-    <h2>Trusted by Industry Leaders</h2>
-    <p class="section-subtitle">See what our customers are saying about DataSight Pro</p>
-    
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <h4>Sarah Johnson</h4>
-            <p>CMO at TechCorp</p>
-          </div>
-        </div>
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Clients Are Saying</h2>
+      <div class="testimonial-grid">
         <blockquote>
-          "DataSight Pro transformed how we approach SEO and analytics. The AI-powered insights helped us increase organic traffic by 200% in just 3 months."
+          <p>“We no longer guess — we know. The dashboard gave us instant access to sales trends.”</p>
+          <cite>Jane Doe – VP of Sales, Clarity Brands</cite>
         </blockquote>
-        <div class="testimonial-rating">
-          ★★★★★
-        </div>
-      </div>
-
-      <div class="testimonial-card featured">
-        <div class="featured-badge">Most Popular</div>
-        <div class="testimonial-header">
-          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David Chen" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <h4>David Chen</h4>
-            <p>Director of Digital at GlobalBrand</p>
-          </div>
-        </div>
         <blockquote>
-          "The predictive analytics have been a game-changer for our business planning. We've seen a 150% ROI since implementing dashboard analytics."
+          <p>“We saved 20% in operational costs in one quarter just from insights gained.”</p>
+          <cite>John Smith – Director of Ops, Horizon Metrics</cite>
         </blockquote>
-        <div class="testimonial-rating">
-          ★★★★★
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="testimonial-header">
-          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rodriguez" class="testimonial-avatar">
-          <div class="testimonial-meta">
-            <h4>Emma Rodriguez</h4>
-            <p>SEO Manager at E-commerce Plus</p>
-          </div>
-        </div>
         <blockquote>
-          "The comprehensive SEO tools and real-time analytics have made our workflow incredibly efficient. Best investment in our tech stack!"
+          <p>“It’s like having a control panel for our entire business. We forecast smarter and react faster.”</p>
+          <cite>Sarah Lee – COO, Axis Ventures</cite>
         </blockquote>
-        <div class="testimonial-rating">
-          ★★★★★
-        </div>
-      </div>
-    </div>
-
-    <div class="testimonial-stats">
-      <div class="stat-item">
-        <span class="stat-number">500+</span>
-        <span class="stat-label">Enterprise Clients</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">98%</span>
-        <span class="stat-label">Client Retention</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">45+</span>
-        <span class="stat-label">Industry Awards</span>
       </div>
     </div>
   </section>
 
-  <section class="demo-section">
-    <div class="demo-header">
-      <h2>Experience the Power of DataSight Pro</h2>
-      <p class="section-subtitle">Take a tour of our comprehensive suite of tools</p>
-    </div>
-
-    <div class="demo-tabs">
-      <button class="demo-tab active" data-tab="dashboard">Dashboard</button>
-      <button class="demo-tab" data-tab="analytics">Analytics</button>
-      <button class="demo-tab" data-tab="reports">Reports</button>
-    </div>
-
-    <div class="demo-content">
-      <div class="demo-tab-content active" id="dashboard-demo">
-        <div class="demo-preview">
-          <img src="img/dashboard-preview.png" alt="Interactive Dashboard" class="demo-image">
-          <div class="demo-features">
-            <h3>Powerful Analytics Dashboard</h3>
-            <ul class="demo-feature-list">
-              <li>Real-time Performance Metrics</li>
-              <li>Customizable Widgets</li>
-              <li>Interactive Data Visualization</li>
-            </ul>
-            <button class="btn btn-primary">Try Dashboard Demo</button>
-          </div>
-        </div>
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>Holistic Growth Marketing</h3>
+        <p>Data-driven dashboards designed for clarity, control, and confident decisions.</p>
       </div>
-
-      <div class="demo-tab-content" id="analytics-demo">
-        <div class="demo-preview">
-          <div class="analytics-showcase">
-            <div class="chart-container">
-              <h4>Visitor Analytics</h4>
-              <canvas id="visitors-chart"></canvas>
-              <div class="chart-legend">
-                <span class="legend-item"><span class="color-dot primary"></span> Visitors</span>
-                <span class="legend-item"><span class="color-dot accent"></span> Conversions</span>
-              </div>
-            </div>
-            <div class="metrics-container">
-              <div class="metric-box">
-                <span class="metric-label">Users</span>
-                <span class="metric-value">125K</span>
-                <span class="metric-trend positive">+12.5%</span>
-              </div>
-              <div class="metric-box">
-                <span class="metric-label">Avg. Session</span>
-                <span class="metric-value">4:32</span>
-                <span class="metric-trend positive">+1:15</span>
-              </div>
-              <div class="metric-box">
-                <span class="metric-label">Pages/Session</span>
-                <span class="metric-value">3.8</span>
-                <span class="metric-trend negative">-0.2</span>
-              </div>
-              <div class="metric-box">
-                <span class="metric-label">Bounce Rate</span>
-                <span class="metric-value">42%</span>
-                <span class="metric-trend positive">-5%</span>
-              </div>
-            </div>
-          </div>
-          <button class="btn btn-primary">View Analytics Demo</button>
-        </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
       </div>
-
-      <div class="demo-tab-content" id="reports-demo">
-        <div class="demo-preview">
-          <div class="reports-showcase">
-            <div class="report-controls">
-              <select id="report-period">
-                <option value="weekly">Weekly</option>
-                <option value="monthly" selected>Monthly</option>
-                <option value="quarterly">Quarterly</option>
-              </select>
-              <button class="btn btn-outline" id="export-pdf">Export PDF</button>
-              <button class="btn btn-primary" id="export-csv">Export CSV</button>
-            </div>
-            
-            <div class="report-table-container">
-              <table class="report-table">
-                <thead>
-                  <tr>
-                    <th>Metric</th>
-                    <th>Current</th>
-                    <th>Previous</th>
-                    <th>Change</th>
-                    <th>Trend</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Organic Traffic</td>
-                    <td>52,412</td>
-                    <td>48,213</td>
-                    <td>+8.7%</td>
-                    < Ditty for me
-                    <td><span class="trend-up">↑↑</span></td>
-                  </tr>
-                  <tr>
-                    <td>Conversion Rate</td>
-                    <td>3.8%</td>
-                    <td>3.5%</td>
-                    <td>+8.6%</td>
-                    <td><span class="trend-up">↑</span></td>
-                  </tr>
-                  <tr>
-                    <td>Top 10 Keywords</td>
-                    <td>142</td>
-                    <td>124</td>
-                    <td>+14.5%</td>
-                    <td><span class="trend-up">↑↑</span></td>
-                  </tr>
-                  <tr>
-                    <td>Backlinks</td>
-                    <td>5,421</td>
-                    <td>5,102</td>
-                    <td>+6.3%</td>
-                    <td><span class="trend-up">↑</span></td>
-                  </tr>
-                  <tr>
-                    <td>Pages per Session</td>
-                    <td>3.8</td>
-                    <td>4.1</td>
-                    <td>-7.3%</td>
-                    <td><span class="trend-down">↓</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <button class="btn btn-primary">Generate Sample Report</button>
-        </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Product</h4>
-        <a href="https://www.holisticgrowthmarketing.com/services">Services</a>
-        <a href="https://www.holisticgrowthmarketing.com/pricing">Pricing</a>
-        <a href="https://www.holisticgrowthmarketing.com/seo-tools-suite">SEO Tools Suite</a>
-        <a href="https://www.holisticgrowthmarketing.com/projects/web-projects">Web Projects</a>
-      </div>
-      <div class="footer-section">
-        <h4>Resources</h4>
-        <a href="https://www.holisticgrowthmarketing.com/resources">Resources</a>
-        <a href="https://www.holisticgrowthmarketing.com/resources/best-articles">Best Articles</a>
-        <a href="https://www.holisticgrowthmarketing.com/resources/seo-fundamentals">SEO Fundamentals</a>
-        <a href="https://www.holisticgrowthmarketing.com/resources/newsletter">Newsletter</a>
-        <a href="https://www.holisticgrowthmarketing.com/resources/glossary">Glossary</a>
-      </div>
-      <div class="footer-section">
-        <h4>Company</h4>
-        <a href="https://www.holisticgrowthmarketing.com/about-us">About</a>
-        <a href="https://www.holisticgrowthmarketing.com/our-mission">Our Mission</a>
-        <a href="https://www.holisticgrowthmarketing.com/contact">Contact</a>
-        <a href="https://www.holisticgrowthmarketing.com/locations">Locations</a>
-      </div>
-      <div class="footer-section">
-        <h4>Legal</h4>
-        <a href="https://www.holisticgrowthmarketing.com/term/privacy-policy">Privacy Policy</a>
-        <a href="https://www.holisticgrowthmarketing.com/term/cookies">Cookie Policy</a>
-        <a href="https://www.holisticgrowthmarketing.com/term/licensing">Licensing</a>
-        <a href="https://www.holisticgrowthmarketing.com/ethics-statement">Ethics Statement</a>
-      </div>
-      <div class="footer-section">
-        <h4>Social</h4>
-        <a href="https://twitter.com/localseogrowth">Twitter</a>
-        <a href="https://www.linkedin.com/company/holistic-growth-marketing">LinkedIn</a>
-        <a href="https://www.facebook.com/holisticgrowthmarketing">Facebook</a>
-        <a href="https://www.instagram.com/holisticgrowthmarketingla">Instagram</a>
-        <a href="https://www.youtube.com/@HolisticGrowthMarketing">YouTube</a>
-      </div>
-      <div class="footer-section">
-        <h4>Contact</h4>
-        <a href="https://www.holisticgrowthmarketing.com/contact">Support</a>
-        <a href="https://www.holisticgrowthmarketing.com/contact">Sales</a>
-        <a href="mailto:jason@holisticgrowthmarketing.com">jason@holisticgrowthmarketing.com</a>
-        <a href="tel:(323)902-1031">(323)902-1031</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="copyright">© 2025 Holistic Growth Marketing. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="https://www.holisticgrowthmarketing.com/sitemap.xml">Sitemap</a>
-    
-        <a href="https://www.holisticgrowthmarketing.com/term/privacy-policy">Do Not Sell My Info</a>
-      </div>
+    <div class="container copyright">
+      <p>&copy; 2025 Holistic Growth Marketing. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script type="module" src="js/app.js"></script>
 </body>
 </html>
