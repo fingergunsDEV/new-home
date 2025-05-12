@@ -44,6 +44,8 @@ button {
 .nav-links {
   display: flex;
   gap: 1.75rem;
+  align-content:space-between;
+  justify-content: space-between;
 }
 
 .nav-links a {
@@ -607,7 +609,9 @@ button {
   font-size: 0.9rem;
   color: #6b7280;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 blockquote {
   font-size: 0.95rem;
   color: #4b5563;
@@ -879,5 +883,139 @@ cbd5e1;
 
   .metric-number {
     font-size: 1.8rem;
+  }
+}
+
+/* Locations Section */
+.locations {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.location-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.location-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.location-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+}
+
+/* Industries Section */
+.industries {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #f1f5f9;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.industry-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.industry-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.industry-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+}
+
+/* Case Studies Section */
+.case-studies {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.case-study-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.case-study-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.case-study-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 1.25rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .locations, .industries, .case-studies {
+    padding: 3rem 1rem;
+  }
+
+  .locations-grid, .industries-grid, .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-card, .industry-card, .case-study-card {
+    padding: 1.5rem;
   }
 }
